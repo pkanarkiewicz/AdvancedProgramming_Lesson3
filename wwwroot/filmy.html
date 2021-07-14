@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <title>Ranking filmów</title>
+
+    <style>
+        input[type='submit'], button, [aria-label] {
+            cursor: pointer;
+        }
+
+        #spoiler {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info sbg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="osoba.html"> Osoby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="book.html"> Książki</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="filmy.html"> Filmy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="autor.html"> Autorzy</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                    </svg>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <center>
+        <img src="https://www.wsb.pl/themes/custom/wsb/images/logos/logo_wsb.png" />
+    </center>
+    <h1 class="text-center"> Ranking filmów</h1>
+
+    <div class="container text-center">
+        <Center>
+            <form class="text-center" action="javascript:void(0);" method="POST" onsubmit="addItem()">
+                <table align="center">
+                    <tr>
+                        <th>
+                            Tytuł:
+                        </th>
+                        <th>
+                            <input type="text" id="add-filmyname" placeholder="">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Autor:
+                        </th>
+                        <th>
+                            <input type="text" id="add-author" placeholder=""><br />
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Ocena:
+                        </th>
+                        <th>
+                            <input type="text" id="add-rating" placeholder="">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+
+                        </th>
+                        <th><input type="submit" value="Dodaj"></th>
+                    </tr>
+                </table>
+            </form>
+        </Center>
+        <br />
+        <div id="spoiler">
+            <h3> Edit</h3>
+            <form action="javascript:void(0);" method="POST" onsubmit="updateItem()">
+                <input type="hidden" id="edit-id">
+                <input type="text" id="edit-bookname">
+                <input type="text" id="edit-author">
+                <input type="text" id="edit-rating">
+                <input type="submit" value="Zapisz">
+            </form>
+        </div>
+        <p id="counter"> </p>
+        <table class="table table-sm table-bordered table-striped bg-white rounded">
+            <tr>
+                <th> Tytuł</th>
+                <th> Reżyser</th>
+                <th> Ocena 1-10</th>
+            </tr>
+            <tbody class="table table-bordered table-striped bg-white rounded" id="Filmy"> </tbody>
+        </table>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="filmy.js"></script>
+    </div>
+</body>
+</html>

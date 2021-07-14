@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+    <AssemblyName>AdvancedProgramming_Lesson3</AssemblyName>
+    <RootNamespace>AdvancedProgramming_Lesson3</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css.map" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css.map" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css.map" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap.css" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap.css.map" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap.min.css" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\js\bootstrap.js" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\js\bootstrap.js.map" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\js\bootstrap.min.js" />
+    <Content Remove="C:\Users\pc\.nuget\packages\bootstrap\4.6.0\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.2" />
+  </ItemGroup>
+
+</Project>
